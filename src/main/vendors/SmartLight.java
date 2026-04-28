@@ -31,13 +31,13 @@ public class SmartLight {
 	}
 
 	public void decreaseIntensity() {
-                intensityOfLight -= 5;
-        }
+		intensityOfLight -= 5;
+	}
 	
 	public void increaseColor() {
-		currColorIndex = currColor.ordinal();
+		int currColorIndex = currColor.ordinal();
 		if (currColorIndex + 1 < colors.length) {
-			currColor = colors[currColorsIndex + 1];
+			currColor = colors[currColorIndex + 1];
 		}
 		else {
 			currColor = colors[0];
@@ -45,9 +45,9 @@ public class SmartLight {
         }
 	
 	public void decreaseColor() {
-                currColorIndex = currColor.ordinal();
+                int currColorIndex = currColor.ordinal();
                 if (currColorIndex - 1 >= 0) {
-                        currColor = colors[currColorsIndex - 1];
+                        currColor = colors[currColorIndex - 1];
                 }
                 else {
                         currColor = colors[colors.length - 1];
