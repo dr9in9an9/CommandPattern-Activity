@@ -3,7 +3,7 @@ package vendors;
 public class SmartLight {
 	/*Shorthand names for main colors.
 	*/
-	private enum Colors { WHT, RED, ORN, YLW, GRN, BLU, PUR }
+	public enum Colors { WHT, RED, ORN, YLW, GRN, BLU, PUR }
 		
 	private final Colors[] colors;
 
