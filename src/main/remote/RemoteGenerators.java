@@ -2,7 +2,7 @@ package remote;
 
 import java.util.Scanner;
 
-import vendors.Television;
+import vendors.*;
 
 /**
  * Library of methods to create specific types of remotes.
