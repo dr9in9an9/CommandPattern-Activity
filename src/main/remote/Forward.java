@@ -8,7 +8,7 @@ import vendors.*;
  * @author Willow Sapphire, Jesus Sisniega-Serrano
  * @version Spring 2026
  */
-public class ChannelForward extends Action
+public class Forward extends Action
 {
     /**
      * The tv for which to change the channel.
