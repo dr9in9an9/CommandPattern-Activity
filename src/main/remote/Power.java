@@ -24,17 +24,17 @@ public class Power extends Action
      */
     public Power(Television tv)
     {
-        super("Power");
+        super("TV Power");
         this.tv = tv;
     }
 
 	public Power(SmartLight light) {
-		super("Power");
+		super("Light Power");
 		this.light = light;
 	}
 
 	public Power(Television tv, SmartLight light) {
-		super("Power");
+		super("TV/Light Power");
 		this.tv = tv;
 		this.light = light;
 	}
@@ -49,22 +49,27 @@ public class Power extends Action
     public boolean performAction()
     {
         if (tv != null || light != null) {
-		if (tv != null) {
+			if (tv != null) {
 				tv.power();
-        	System.out.printf("The tv has turned %s\n", tv.isOn() ? "on" : "off");
+        		System.out.printf("The tv has turned %s\n", tv.isOn() ? "on" : "off");
         		if (tv.isOn())
         		{
             			System.out.printf("Volume: %d\nChannel: %s\n", tv.getVolume(), tv.getCurrentChannel());
         		}
-		}
-		if (light != null) {
-			light.power();
-			System.out.printf("The smart light is %s\n", light.isOn() ? "on" : "off");
-		}
+			}
+			if (light != null) {
+				light.power();
+				System.out.printf("The smart light is %s\n", light.isOn() ? "on" : "off");
+				if (tv.isOn())
+        		{
+            			System.out.printf("Brightness: %d\%\nColor: %s\n", light.getIntensity(), light.getCurrColor().name());
+        		}
+			}
 
-		return true;
-	else {
-		return false;
-	}
+			return true;
+		}
+		else {
+			return false;
+		}
     }
 }
