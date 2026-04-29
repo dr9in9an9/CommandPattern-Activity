@@ -64,7 +64,7 @@ public class Backward extends Action
         }
 
         if (light != null) {
-            if (!tv.isOn())
+            if (!light.isOn())
             {
                 System.out.println("You need to turn on the light before you can change the color.");
                 didntFail = false;
@@ -72,7 +72,7 @@ public class Backward extends Action
             else
             {
                 light.decreaseColor();
-                System.out.printf("Previous Color. Now on color: %s\n", light.getColor());
+                System.out.printf("Previous Color. Now on color: %s\n", light.getColor().name());
             }
         }
 
