@@ -72,7 +72,7 @@ public class Backward extends Action
             else
             {
                 light.decreaseColor();
-                System.out.printf("Previous Color. Now on color: %s\n", light.getCurrColor());
+                System.out.printf("Previous Color. Now on color: %s\n", light.getColor());
             }
         }
 
