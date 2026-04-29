@@ -16,7 +16,8 @@ public class Demo
     {
         Scanner kb = new Scanner(System.in);
         Television tv = new Television(100);
-        Remote remote = RemoteGenerators.tvRemote(tv, kb);
+        SmartLight light = new SmartLight();
+        Remote remote = RemoteGenerators.superRemote(tv, kb, light);
         remoteDemo(remote, kb);
     }
 
