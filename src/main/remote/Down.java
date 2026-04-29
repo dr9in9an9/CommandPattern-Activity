@@ -72,13 +72,14 @@ public class Down extends Action
             if (!light.isOn()) {
                 System.out.println("You need to turn on the light before you can change the brightness.");
                 didntFail = false;
+            }
             else if (light.getIntensity() == 0) {
                 System.out.println("Brightness already at zero");
                 didntFail = false;
             }
             else {
                 light.decreaseIntensity();
-                System.out.printf("Brightness down. Now at %d\%\n", light.getIntensity());
+                System.out.printf("Brightness down. Now at %d%%\n", light.getIntensity());
             }
         }
         
