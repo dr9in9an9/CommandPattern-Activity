@@ -1,11 +1,11 @@
 package remote;
-import vendors.Television;
+import vendors.*;
 
 /**
  * A child class of action that increases the volume of a tv.
  * 
- * @author Willow Sapphire
- * @version Fall 2022
+ * @author Willow Sapphire, Jesus Sisniega-Serrano
+ * @version Spring 2026
  */
 public class Up extends Action
 {
