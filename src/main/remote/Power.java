@@ -62,7 +62,7 @@ public class Power extends Action
 				System.out.printf("The smart light is %s\n", light.isOn() ? "on" : "off");
 				if (tv.isOn())
         		{
-            			System.out.printf("Brightness: %d%%\nColor: %s\n", light.getIntensity(), light.getCurrColor().name());
+            			System.out.printf("Brightness: %d%%\nColor: %s\n", light.getIntensity(), light.getColor().name());
         		}
 			}
 
