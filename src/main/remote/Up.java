@@ -72,13 +72,14 @@ public class Up extends Action
             if (!light.isOn()) {
                 System.out.println("You need to turn on the light before you can change the brightness.");
                 didntFail = false;
+            }
             else if (light.getIntensity() == 100) {
                 System.out.println("Brightness already at maximum");
                 didntFail = false;
             }
             else {
                 light.increaseIntensity();
-                System.out.printf("Brightness up. Now at %d\%\n", light.getIntensity());
+                System.out.printf("Brightness up. Now at %d%%\n", light.getIntensity());
             }
         }
         
