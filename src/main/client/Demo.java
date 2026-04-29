@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 import remote.Remote;
 import remote.RemoteGenerators;
-import vendors.Television;
+import vendors.*;
 
 public class Demo
 {
