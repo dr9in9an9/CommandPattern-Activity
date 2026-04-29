@@ -117,7 +117,7 @@ public class Remote
         int halfButtons = (int) Math.ceil(buttons.length / 2.0);
         for (int i = 0; i < halfButtons; i++)
         {
-            output += String.format("%d) %-22s", i, buttons[i]);
+            output += String.format("%d) %-23s", i, buttons[i]);
             if (i + halfButtons < buttons.length)
             {
                 output += String.format("%d) %s\n", i + halfButtons, buttons[i + halfButtons]);
