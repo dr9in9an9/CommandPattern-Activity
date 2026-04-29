@@ -27,11 +27,11 @@ public class SmartLight {
 	}
 	
 	public void increaseIntensity() {
-		intensityOfLight += 5;
+		intensityOfLight += 1;
 	}
 
 	public void decreaseIntensity() {
-		intensityOfLight -= 5;
+		intensityOfLight -= 1;
 	}
 	
 	public void increaseColor() {
